@@ -1,38 +1,263 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav .home{
+  margin-top: 5px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  min-height: 8vh;
+  position: absolute;
+  width: 100%;
   align-items: center;
+  
+}
+
+
+
+.login {
+  background: #26ae61;
+  padding: 11px 20px;
+  color: #ffffff !important;
+  border-radius: 6px;
+  margin-top: 13px;
+  margin-left: 10px;
+  color: black;
+  background-color: black;
+}
+
+.logo {
+  display: flex;
+  color: purple;
+  font-size: 50px;
+}
+
+.logo h4 {
+  margin-left: 7px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+
+.navlinks {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 40%;
+  margin-right: 300px;
+
+
+}
+
+.home .link{
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(179, 37, 94);
+}
+.hamburger-toggle {
+  cursor: pointer;
+  display: none;
+  color: crimson;
+}
+.Navi  {
+  height: 100vh;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: rgb(151, 135, 135);
+
+}
+
+
+
+@media screen and (max-width: 550px) {
+  .hamburger-toggle {
+    display: block;
+  }
+  .navlinks {
+    
+    position: absolute;
+    right: center;
+    display: flex;
+    flex-direction: column;
+    height: 92vh;
+    align-items: center;
+    width: 100%;
+    top: 8vh;
+    background-color: crimson;
+    font-size: 22px;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .active {
+    transform: translateX(0%);
+  }
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.s01 {
+  background: url("https://hiring-assets.careerbuilder.com/media/attachments/careerbuilder-ar_post-3547.jpg?1509467746");
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background-size: cover;
+  background-position: center center;
+  padding: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.s01 form {
+  width: 60%;
+  max-width: 1290px;
+  margin-left: -350px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.s01 .wrapper {
+  position: absolute;
+  left: 39%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 1;
+  color: rgb(12, 12, 12);
+}
+
+h2::before {
+  content: "";
+  animation: animate infinite 10s;
+}
+
+@keyframes animate {
+  10% {
+    content: "Find the Job of your Dream in a Couple of Clicks";
   }
-  to {
-    transform: rotate(360deg);
+
+  50% {
+    content: "The Place Where New Talents are Found";
+  }
+
+  100% {
+    content: "Perfect Employment Opportunities";
   }
 }
+.s01 form .inner-form {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px 47px;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.s01 form .inner-form .input-field {
+  margin-right: 30px;
+  height: 68px;
+}
+
+.s01 form .inner-form .input-field select {
+  height: 100%;
+  background: #fff;
+  border-radius: 0.5px;
+  border: 0;
+  display: block;
+  width: 100%;
+  padding: 10px 32px;
+  font-size: 20px;
+}
+
+.s01 form .inner-form .input-field input {
+  height: 100%;
+  background: #fff;
+  border-radius: 0.5px;
+  border: 0;
+  display: block;
+  width: 100%;
+  padding: 10px 32px;
+  font-size: 20px;
+}
+.s01 form .inner-form .input-field input.placeholder {
+  color: #9a9a9a;
+  font-size: 20px;
+}
+
+.s01 form .inner-form .input-field input:hover,
+.s01 form .inner-form .input-field input:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+.s01 form .inner-form .input-field.first-wrap {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.s01 form .inner-form .input-field.second-wrap {
+  width: 32.77%;
+  min-width: 180px;
+}
+
+.s01 form .inner-form .input-field.third-wrap {
+  width: 180px;
+  margin-right: 0;
+}
+
+.s01 form .inner-form .input-field.third-wrap .btn-search {
+  height: 100%;
+  width: 100%;
+  background: #313335;
+  white-space: nowrap;
+  border-radius: 0.5px;
+  font-size: 20px;
+  color: #fff;
+  transition: all 0.2s ease-out, color 0.2s ease-out;
+  border: 0;
+  cursor: pointer;
+}
+
+.s01 form .inner-form .input-field.third-wrap .btn-search:hover {
+  background: purple;
+}
+
+
+.App .Main{
+  margin-top: -680px;
+background-color: purple;
+ }
+
